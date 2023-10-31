@@ -1,14 +1,16 @@
-# 1) INSTALAÇÕES INICIAIS
+# 1) INSTALAÇÕES INICIAIS NO TERMINAL
 # pip install pandas
 # pip install selenium
 # pip install webdriver-manager
 # pip install lxml
+# pip install datetime
 
 # 2) IMPORTAÇÕES DAS BIBLIOTECAS
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
+import datetime
 
 # 3) ABRE NAVEGADOR --> ACESSA SITE
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
