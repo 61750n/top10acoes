@@ -15,7 +15,7 @@ As empresas da lista estão classificada dessa forma:
 2- Por ROIC;
 3- Por Dividend Yiueld;
 
-A lista gerada é exportada como arquivo Excel (xlsx)
+A lista gerada é exportada como arquivo Excel (xlsx). O programa usa os dados do site Fundamentus.
 
 
 ## Por que o projeto é útil?
