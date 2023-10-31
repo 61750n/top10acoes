@@ -103,5 +103,11 @@ tabela = tabela.sort_values('ranking_total')
 #14) EXIBE AS 10 MELHORES AÇÕES:
 print(tabela.head(10))
 
-#15) EXPORTA PARA EXCEL
-tabela.to_excel('C:/Users/gilso/OneDrive/Programacao/FIIs e Acoes/top_10_acoes.xlsx', index=False)
+#15) OBTÉM A DATA ATUAL
+data_atual = datetime.datetime.today()
+
+#16) PREPARA O NOME DO ARQUIVO
+nome_arquivo = f"top_10_acoes_{data_atual.strftime('%Y-%m-%d')}.xlsx"
+
+#17) EXPORTA PARA EXCEL
+tabela.to_excel(f'{nome_arquivo}', index=False)
